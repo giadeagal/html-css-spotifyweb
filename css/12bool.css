@@ -141,3 +141,7 @@
 .bottom-xs {
     align-items: flex-end;
 }
+
+.uppercase * {
+    text-transform: uppercase;
+}
