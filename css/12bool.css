@@ -20,6 +20,7 @@
 
 [class*="col-"] {
     flex: 0 0 auto;
+    display: flex;
 } 
   /* 12 System */
 .col-xs {
@@ -111,6 +112,10 @@
     margin-left: calc((100% / 12) * 11);
 }
 
+.margin-left-20px {
+    margin-left: 20px;
+}
+
 .start-xs {
     justify-content: flex-start;
 }
@@ -144,4 +149,20 @@
 
 .uppercase * {
     text-transform: uppercase;
+}
+
+.white-txt {
+    color: #fff;
+}
+
+.gray-txt {
+    color: #7a7c81;
+}
+
+.gray {
+    background-color: #7a7c81;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
 }
