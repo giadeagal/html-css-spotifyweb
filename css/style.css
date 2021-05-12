@@ -106,3 +106,6 @@ footer {
     bottom: 0;
 }
 
+.halfimg {
+    width: calc(100% / 6);
+}
