@@ -8,7 +8,12 @@
     width: 100%;
 }
 
-.container {
+.container-90 {
+    width: 90%;
+    margin: 0 auto;
+} 
+
+.container-80 {
     width: 80%;
     margin: 0 auto;
 } 
@@ -116,6 +121,22 @@
     margin-left: 20px;
 }
 
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+
+.direction-col {
+    flex-direction: column;
+}
+
 .start-xs {
     justify-content: flex-start;
 }
@@ -135,20 +156,16 @@
     justify-content: space-between;
 }
 
-.top-xs{
-    align-items: flex-start;
-}
-
-.middle-xs{
-    align-items: center;
-}
-
-.bottom-xs {
-    align-items: flex-end;
-}
-
 .uppercase * {
     text-transform: uppercase;
+}
+
+.small-txt {
+    font-size: 12px;
+}
+
+.very-small-txt {
+    font-size: 10px;
 }
 
 .white-txt {
