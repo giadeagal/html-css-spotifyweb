@@ -9,13 +9,6 @@
     position: relative;
 }
 
-.container-20-left {
-    position: absolute;
-    left:0%;
-    top:0;
-    width: 20%;
-}
-
 .container-90 {
     width: 90%;
     margin: 0 auto;
