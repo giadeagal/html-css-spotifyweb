@@ -6,9 +6,15 @@
 
 .wrapper{
     width: 100%;
+    position: relative;
 }
 
-.container-0-right
+.container-20-left {
+    position: absolute;
+    left:0%;
+    top:0;
+    width: 20%;
+}
 
 .container-90 {
     width: 90%;
@@ -23,6 +29,7 @@
 .container-80-right {
     position: absolute;
     right: 0;
+    top:0;
     width: 80%;
 }
 

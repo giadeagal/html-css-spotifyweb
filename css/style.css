@@ -103,3 +103,9 @@ footer {
 .halfimg {
     width: calc(100% / 6);
 }
+
+aside {
+    background-color: black;
+    width: 100%;
+    height: calc(100vh - 70px);
+}
