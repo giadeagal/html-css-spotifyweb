@@ -8,6 +8,8 @@
     width: 100%;
 }
 
+.container-0-right
+
 .container-90 {
     width: 90%;
     margin: 0 auto;
@@ -16,7 +18,13 @@
 .container-80 {
     width: 80%;
     margin: 0 auto;
-} 
+}
+
+.container-80-right {
+    position: absolute;
+    right: 0;
+    width: 80%;
+}
 
 .row {
     display: flex;
@@ -125,6 +133,10 @@
     padding-top: 20px;
 }
 
+.padding-top-10 {
+    padding-top: 10px;
+}
+
 .padding-bottom-20 {
     padding-bottom: 20px;
 }
@@ -172,6 +184,10 @@
     color: #fff;
 }
 
+.hov-white-txt:hover {
+    color:#fff;
+}
+
 .gray-txt {
     color: #7a7c81;
 }
@@ -182,4 +198,8 @@
 
 .overflow-y-auto {
     overflow-y: auto;
+}
+
+.round {
+    border-radius: 50%;
 }
