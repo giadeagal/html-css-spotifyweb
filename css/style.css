@@ -6,6 +6,14 @@ body {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 main {
     background-color: #141922;
     padding: 80px 0 120px;
@@ -165,10 +173,6 @@ nav>ul>li>a i {
     margin-right: 5px;
 }
 
-nav>ul>li>a:hover {
-
-}
-
 aside h3 {
     padding-left: 20px;
 }
@@ -192,14 +196,6 @@ aside h3 {
     color: springgreen;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
 #playlist-box {
     height: 100px;
     align-items: initial;
@@ -215,14 +211,20 @@ ul {
     height: 100%;
 }
 
+#track-info .container-player {
+    height: 100%;
+    width: 80px;
+    padding: 10px;
+}
+
 .row#action-bar,
-.row#progress-bar {
+.row.progress-bar {
     height: 40px;
     width: 100%;
 }
 
 .row#action-bar i,
-.row#progress-bar i {
+.row.progress-bar i {
     color: white;
     margin: 0 20px;
 }
@@ -245,11 +247,12 @@ ul {
     transform: scale(1.2);
 }
 
-#progress-bar {
+.progress-bar {
     position: relative;
+    /* overflow-y: hidden; */
 }
 
-#progress-bar [id$="bar"]{
+.progress-bar [class$="bar"]{
     position: absolute;
     top: 50%;
     left:50%;
@@ -257,19 +260,24 @@ ul {
     height: 5px;
 }
 
-#empty-bar {
-    background-color: #000;
-    transform: translate(-50%, -50%);
+.bar-container {
     width: 100%;
+    /* overflow-y: hidden; */
 }
 
-#full-bar {
+.empty-bar {
+    background-color: #000;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+
+.full-bar {
     background-color: #666; 
-    transform: translate(-280%, -50%);
+    transform: translate(-190%, -50%);
     width: 20%;
 }
 
-#progress-bar .dot {
+.progress-bar .dot {
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -280,12 +288,80 @@ ul {
     transform: translateY(-50%);
 }
 
-#progress-bar:hover .dot {
+.progress-bar:hover .dot {
     display: inline-block;
     background-color: #bbb;    
 }
 
-#progress-bar .dot:hover {
+.progress-bar .dot:hover {
     cursor: pointer;
     background-color: springgreen; 
 }
+
+#track-info span {
+    height:30px;
+    position: absolute;
+    font-size: 12px;
+}
+
+#track-info span:first-of-type {
+    color: #fff;
+}
+
+#track-info span:first-of-type {
+    position:absolute;
+    top: 25px;
+    left:5%;
+    color: white;
+}
+
+#track-info span:nth-of-type(2) {
+    position:absolute;
+    top: 40px;
+    left:5%;
+    color: #bbb;
+}
+
+.timer:first-of-type {
+    padding-right: 20px;
+}
+
+.timer span {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#minisettings {
+    position: relative;
+    width: 100%;
+}
+
+#mini-settings i {
+    color: white;
+}
+
+#mini-settings i:first-of-type {
+    position:absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+}
+
+#mini-settings i:nth-of-type(2) {
+    position:absolute;
+    top: 50%;
+    right: calc(15% - 40px);
+    transform: translate(-50%, -50%);
+}
+
+#mini-settings i:nth-of-type(3) {
+    position:absolute;
+    top: 50%;
+    right: calc(15% - 80px);
+    transform: translate(-50%, -50%);
+}
+
+

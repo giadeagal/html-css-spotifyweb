@@ -125,6 +125,18 @@
     margin-left: calc((100% / 12) * 11);
 }
 
+.first {
+    order: 1;
+}
+
+.second {
+    order: 2;
+}
+
+.third {
+    order:3;
+}
+
 .margin-left-20px {
     margin-left: 20px;
 }
