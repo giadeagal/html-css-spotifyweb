@@ -157,6 +157,10 @@
     justify-content: center;
 }
 
+.middle-xs {
+    align-items: center;
+}
+
 .end-xs {
     justify-content: flex-end;
 }
@@ -194,6 +198,10 @@
 
 .gray {
     background-color: #7a7c81;
+}
+
+.debug {
+    height: 100%;
 }
 
 .overflow-y-auto {

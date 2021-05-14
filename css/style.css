@@ -41,7 +41,7 @@ main>.topbar>.button,
 }
 
 .topbar>.button a:hover {
-    color: palegreen;
+    color: springgreen;
 }
 
 .topbar>.button:hover {
@@ -74,7 +74,7 @@ main>.topbar>.button,
 }
 
 #main-nav>ul>li a:hover .neon-green {
-    background-color: palegreen;
+    background-color: springgreen;
     margin: auto;
     width: 50px;
 }
@@ -149,7 +149,7 @@ nav>ul>li {
 }
 
 #aside-top-nav>ul>li:hover {
-    border-left: 2px solid palegreen;
+    border-left: 2px solid springgreen;
 }
 
 nav>ul>li>a {
@@ -189,7 +189,7 @@ aside h3 {
 }
 
 #add-playlist a:hover i {
-    color: palegreen;
+    color: springgreen;
 }
 
 a {
@@ -208,4 +208,47 @@ ul {
 
 #playlist-box nav ul li a:hover {
     color: #fff;
+}
+
+#track-info {
+    width:100%;
+    height: 100%;
+}
+
+.row#action-bar,
+.row#progress-bar {
+    height: 40px;
+    width: 100%;
+}
+
+.row#action-bar i,
+.row#progress-bar i {
+    color: white;
+    margin: 0 20px;
+}
+
+#action-bar i:not(:only-child) {
+    font-size: 16px;
+}
+
+#action-bar i:only-child {
+    font-size: 35px;
+}
+
+#action-bar i:hover {
+    cursor: pointer;
+    color: springgreen;
+}
+
+#action-bar i:only-child:hover{
+    color: springgreen;
+    transform: scale(1.2);
+}
+
+.teal {
+    background-color: teal;
+}
+
+.red {
+    background-color: red;
 }
