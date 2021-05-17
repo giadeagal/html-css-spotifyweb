@@ -95,8 +95,41 @@ main>.topbar>.button,
     align-items: center;
 }
 
+.box .imgcontainer {
+    position: relative;
+}
+
 .box img {
     width: 90%;
+    opacity:1;
+    transition: 600ms ease-out;
+}
+
+.box i {
+    display:none
+}
+
+.box:hover i {
+    display: block;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 80px;
+    transform: translate(-60%, -50%);
+    /* text-align: center; */
+}
+
+.box:hover i:hover {
+    color: springgreen;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box:hover img {
+    opacity:0.3;
 }
 
 .box h3 {
@@ -451,7 +484,7 @@ footer i {
 }
 
 #user-container [class^="col"]:nth-of-type(2) span:hover {
-    color: springgreen;
+    color: #00ff7f;
 }
 
 #user-container [class^="col"]:nth-of-type(2) span:hover,
