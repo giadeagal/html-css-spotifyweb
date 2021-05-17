@@ -1,5 +1,20 @@
 /* XS */
 @media screen and (min-width: 320px) {
+    
+    aside #minilogo {
+        height: 70%;
+        padding: 15px;
+    }
+
+    aside #minilogo img {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    aside #logo {
+        display: none;
+    }
+    
     aside a#addplaylist i {
         font-size: 20px;
     }
@@ -7,10 +22,28 @@
     aside a#addplaylist-txt {
         display: none;
     }
+
+    #aside-top-nav span {
+        display:none
+    }
+
+    aside #playlist-box {
+        display:none
+    }
+
+    aside h3 {
+        display: none;
+    }
 }
 
-/* MD */
+/* SM */
 @media screen and (min-width: 768px) {
+    aside #minilogo{
+        display: none;
+    }
+
+    aside #logo {display: block;}
+    
     aside a#addplaylist i {
         font-size: 40px;
     }
@@ -18,9 +51,21 @@
     aside a#addplaylist-txt {
         display: inline-block;
     }
+
+    #aside-top-nav span {
+        display:inline-block
+    }
+
+    aside #playlist-box {
+        display:block
+    }
+
+    aside h3 {
+        display: block;
+    }
 }
 
-/* LG */
+/* MD */
 @media screen and (min-width: 1200px) {
-    
+
 }
