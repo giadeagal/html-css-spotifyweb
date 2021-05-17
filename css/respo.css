@@ -34,6 +34,10 @@
     aside h3 {
         display: none;
     }
+
+    aside #user-container span {
+        display:none;
+    }
 }
 
 /* SM */
@@ -106,18 +110,12 @@
     aside a#addplaylist i {
         font-size: 40px;
     }
-    
-    aside a#addplaylist-txt {
-        display: inline-block;
-    }
 
     #aside-top-nav span {
         display:inline-block
     }
 
-    aside #playlist-box {
-        display:block
-    }
+    
 
     aside h3 {
         display: block;
@@ -184,6 +182,14 @@
     .start-md {
         justify-content: flex-start ;
     }
+
+    aside #user-container span {
+        display:inline;
+    }
+
+    aside #playlist-box {
+        display:block
+    }
 }
 
 /* LG */
@@ -241,5 +247,9 @@
     .col-lg-12 {
         flex-basis: calc((100% / 12) * 12);
         max-width: calc((100% / 12) * 12);
+    }
+
+    aside a#addplaylist-txt {
+        display: inline-block;
     }
 }
