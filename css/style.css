@@ -127,6 +127,7 @@ footer {
 }
 
 aside {
+    position: relative;
     background-color: black;
     width: 100%;
     height: calc(100vh - 80px);
@@ -410,11 +411,50 @@ footer i {
     color: white;
 }
 
-#player-icons i:first-of-type {
-    top: 50%;
-    left:50%
+#user-container {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-#player-icons i:nth-of-type(2) {
- color: tomato;
+#user-container [class^="col"] {
+    padding:5px;
+    height:30px;
+}
+
+#user-container [class^="col"] i {
+    margin-right: 10px;
+}
+
+#user-container [class^="col"]:first-of-type {
+    font-size: 14px;
+    color:#666;
+    border-bottom: 1px solid #666;
+}
+#user-container [class^="col"]:nth-of-type(2) {
+    color: white;
+}
+
+#user-container [class^="col"]:nth-of-type(2) i {
+    background-color: #666;
+    border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+#user-container [class^="col"]:first-of-type span:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+#user-container [class^="col"]:nth-of-type(2) span:hover {
+    color: springgreen;
+}
+
+#user-container [class^="col"]:nth-of-type(2) span:hover,
+#user-container [class^="col"]:nth-of-type(2) i:hover{
+    cursor:pointer;
 }
