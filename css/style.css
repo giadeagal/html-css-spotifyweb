@@ -405,3 +405,16 @@ aside h3 {
     cursor: pointer;
     background-color: springgreen; 
 }
+
+footer i {
+    color: white;
+}
+
+#player-icons i:first-of-type {
+    top: 50%;
+    left:50%
+}
+
+#player-icons i:nth-of-type(2) {
+ color: tomato;
+}

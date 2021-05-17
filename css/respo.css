@@ -1,0 +1,26 @@
+/* XS */
+@media screen and (min-width: 320px) {
+    aside a#addplaylist i {
+        font-size: 20px;
+    }
+    
+    aside a#addplaylist-txt {
+        display: none;
+    }
+}
+
+/* MD */
+@media screen and (min-width: 768px) {
+    aside a#addplaylist i {
+        font-size: 40px;
+    }
+    
+    aside a#addplaylist-txt {
+        display: inline-block;
+    }
+}
+
+/* LG */
+@media screen and (min-width: 1200px) {
+    
+}
